@@ -1,5 +1,6 @@
 $(function () {
 
+    // rightside menu
     $('.header__btn').on('click' , function () {
         $('.rightside-menu').removeClass('rightside-menu--close');
     });
@@ -7,6 +8,13 @@ $(function () {
     $('.rightside-menu__close').on('click' , function () {
         $('.rightside-menu').addClass('rightside-menu--close');
     });
+
+    // rightside menu (540px)
+    $('.header__btn-menu').on('click' , function () {
+        $('.menu').toggleClass('menu--open');
+    });
+
+
 
     $('.top__slider').slick({
         dots: true,

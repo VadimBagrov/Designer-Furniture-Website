@@ -3,11 +3,11 @@
 @import 'reset';
 @import 'libs';
 @import 'global';
- 
+
 .header {
     &__inner{
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
         height: 120px;
     }
@@ -16,6 +16,9 @@
         border: none;
         padding: 0;
         cursor: pointer; //Изменение курсора при наведении
+    }
+    &__btn-menu {
+        display: none;
     }
 }
 
@@ -1275,3 +1278,6 @@
 .text-rem {
     padding-left: 25px;
 }
+
+// Адаптивный дизайн
+@import 'media';
