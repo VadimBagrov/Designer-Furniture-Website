@@ -1,9 +1,21 @@
+@media (max-width: 1700px) {
+    .contact-slider {
+        &__img {
+            width: 100%;
+        }
+    }
+}
+
 @media (max-width: 1366px) {
     .collection {
         grid-template-columns: repeat(3, 1fr);
         &__images {
             width: 100%;
         }
+    }
+
+    .map {
+        margin-top: 0;
     }
 }
 
@@ -18,6 +30,12 @@
             height: 640px;
         }
     }
+
+    .contact-slider{
+        &__img {
+            height: 240px;
+        }
+    }
 }
 
 
@@ -25,6 +43,25 @@
     .footer {
         &__info {
             width: 380px;
+        }
+    }
+
+    .gallery{
+        &__items {
+            grid-gap: 10px;
+        }
+        &__btn {
+            margin: 0;
+            padding: 6px 10px;
+        }
+    }
+
+    .about {
+        &__text {
+            padding-left: 0;
+        }
+        &__content {
+            padding: 40px 0;
         }
     }
 }
@@ -57,6 +94,16 @@
         }
         &__item--production {
             margin-left: 50px;
+        }
+    }
+
+    .contact {
+        .contact__social {
+            padding-left: 0;
+        }
+        &__box,
+        &__form {
+            padding-left: 0;
         }
     }
 }
@@ -115,6 +162,38 @@
             margin-left: 100px;
         }
     }
+    .gallery {
+        &__buttons {
+            display: grid;
+        }
+        &__btn {
+            margin-bottom: 10px;
+        }
+    }
+
+    .about {
+        &__prev {
+            padding: 80px 0;
+        }
+    }
+
+    .inspiration {
+        &__images {
+            display: none;
+        }
+    }
+
+    .partners {
+        &__items {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+
+    .map {
+        iframe{
+            height: 300px;
+        }
+    }
 }
 
 
@@ -160,6 +239,31 @@
             width: 119px
         }
     }
+
+    .blog-box {
+        &__items {
+            display: block;
+        }
+        &__img {
+            width: 100%;
+        }
+        &__img-link {
+            display: block;
+        }
+        &__item {
+            margin-bottom: 20px;
+        }
+    }
+
+    .contact {
+        &__form-input {
+            width: 100%;
+        }
+    }
+
+    .slick-dots li {
+        margin: 0 5px;
+    }
 }
 
 
@@ -201,16 +305,33 @@
         grid-template-columns: repeat(1, 1fr);
     }
 
-    @media (max-width: 540px) {
-        %title-font {
-            font-size: 28px;
-            line-height: 36px;
+    %title-font {
+        font-size: 28px;
+        line-height: 36px;
+    }
+
+    .works-path{
+        &__item-title {
+            font-size: 16px;
+            line-height: 27px;
         }
-        .works-path{
-            &__item-title {
-                font-size: 16px;
-                line-height: 27px;
-            }
+    }
+
+    .inspiration {
+        &__item-text,
+        &__num {
+            font-size: 16px;
+            line-height: 23px;
+        }
+        &__item-text {
+            margin-right: 10px;
+        }
+    }
+
+    .blog-box {
+        &__item-title {
+            font-size: 22px;
+            line-height: 36px;
         }
     }
 
@@ -239,6 +360,31 @@
             padding: 15px 0;
         }
     }
+
+    .gallery {
+        &__items {
+            grid-template-columns: repeat(1, 1fr);
+        }
+        &__item:first-child {
+            grid-column: 1;
+            grid-row: 1;
+        }
+        // Чтобы было 10 картинок(не пропадали при гриде слияния 2)
+        &.gallery-page {
+            .gallery__item:nth-child(8) {
+                grid-column: 1;
+                grid-row: 1;
+            }
+        }
+    }
+
+    .about {
+        &__prev-title {
+            font-size: 40px;
+            line-height: 48px;
+        }
+    }
+
 }
 
 
@@ -258,5 +404,14 @@
             margin-left: 0;
             margin-top: 10px;
         }
+    }
+    .contact-slider {
+        &__img {
+            height: 310px;
+        }
+    }
+ 
+    .slick-dots li {
+        margin: 0 1px;
     }
 }
