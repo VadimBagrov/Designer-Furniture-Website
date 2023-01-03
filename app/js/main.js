@@ -14,6 +14,10 @@ $(function () {
         $('.menu').toggleClass('menu--open');
     });
 
+    //При медиазапросе меньше 650 переместить элемент(jquery)
+    if($(window).width() < 651) {
+        $('.works-path__item--measurements').appendTo( $('.works-path__items-box') );
+    }
 
 
     $('.top__slider').slick({
