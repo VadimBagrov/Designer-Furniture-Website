@@ -1268,7 +1268,8 @@
             width: 21px;
             height: 21px;
             border: 1px solid #979797;
-            margin-top: 6px;
+            margin-top: 4px;
+            border-radius: 5px;
         }
         .check-box:checked+.check-style {
             background-image: url(../images/check/on.svg);
